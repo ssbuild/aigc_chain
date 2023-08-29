@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/chatchain.iml" filepath="$PROJECT_DIR$/.idea/chatchain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/aigc_chain.iml" filepath="$PROJECT_DIR$/.idea/aigc_chain.iml" />
     </modules>
   </component>
 </project>
