@@ -3,7 +3,7 @@ import openai
 
 # 新版本
 openai.api_key = "112233"
-openai.api_base = "http://192.168.2.180:8081/v1"
+openai.api_base = "http://106.12.147.243:8081/v1"
 
 openai.proxy = None
 # model = "chatglm2-6b-int4"
@@ -11,6 +11,7 @@ openai.proxy = None
 # model = "ChatYuan-large-v2"
 model = "qwen-7b-chat"
 model = "qwen-chat-7b-int4"
+model = "Yi-34B-Chat"
 
 # # Test list models API
 # models = openai.Model.list()
@@ -24,14 +25,13 @@ data = {
     "model": model,
     "adapter_name": None, # lora头
     "messages": [{"role": "user", "content": input_text}],
-    "top_p": 1.0,
-    "temperature": 0,
     "frequency_penalty": 1.01,
     "stream": stream,
     "nchar": 1,# stream 字符
     "n": 1, # 返回 n 个choices
     # "stop": ["Observation:"]
-    "top_k": 1,
+    "temperature": 0.6,
+    "top_p": 0.8,
 }
 
 for i in range(1):
