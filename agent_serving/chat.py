@@ -14,7 +14,7 @@ from typing import List
 
 from pydantic import BaseModel
 
-from serving.openai_chat import OpenAiMessage
+from agent_serving.openai_chat import OpenAiMessage
 
 class History(BaseModel):
     """
